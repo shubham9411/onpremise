@@ -18,8 +18,6 @@ x-defaults: &defaults
     - memcached
     - smtp
   env_file: .env
-  networks:
-    - sentrynet
   environment:
     SENTRY_MEMCACHED_HOST: memcached
     SENTRY_REDIS_HOST: redis
@@ -90,7 +88,3 @@ volumes:
       external: true
     sentry-postgres:
       external: true
-
-networks:
-  sentrynet:
-    driver: bridge
