@@ -364,3 +364,7 @@ if 'BITBUCKET_CONSUMER_KEY' in os.environ:
     
 SENTRY_OPTIONS['auth-google.client-id']  = env('GOOGLE_CLIENT_ID')
 SENTRY_OPTIONS['auth-google.client-secret'] = env('GOOGLE_CLIENT_SECRET')
+
+SENTRY_OPTIONS['slack.client-id'] = env('SLACK_CLIENT_ID')
+SENTRY_OPTIONS['slack.client-secret'] = env('SLACK_CLIENT_SECRET')
+SENTRY_OPTIONS['slack.verification-token'] = env('SLACK_VERIFICATION_TOKEN')
