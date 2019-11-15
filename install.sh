@@ -71,7 +71,6 @@ echo "Secret key written to $ENV_FILE"
 
 echo ""
 echo "Setting up database..."
-
 docker-compose run --rm web upgrade --noinput
 echo ""
 echo "Did not prompt for user creation due to non-interactive shell."
