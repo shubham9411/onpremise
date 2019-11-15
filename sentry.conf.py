@@ -361,3 +361,6 @@ if 'GITHUB_APP_ID' in os.environ:
 if 'BITBUCKET_CONSUMER_KEY' in os.environ:
     BITBUCKET_CONSUMER_KEY = env('BITBUCKET_CONSUMER_KEY')
     BITBUCKET_CONSUMER_SECRET = env('BITBUCKET_CONSUMER_SECRET')
+    
+SENTRY_OPTIONS['auth-google.client-id']  = env('GOOGLE_CLIENT_ID')
+SENTRY_OPTIONS['auth-google.client-secret'] = env('GOOGLE_CLIENT_SECRET')
